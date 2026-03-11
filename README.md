@@ -3,6 +3,6 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 
 
  ## 11-03-2026
- -> Atualizações no Documento de Requisitos,
- -> Novas instalações no Backend,
- -> Alterações no Figma com o projeto Modelo de 2025.
+ - > Atualizações no Documento de Requisitos,
+ - > Novas instalações no Backend,
+ - > Alterações no Figma com o projeto Modelo de 2025.
