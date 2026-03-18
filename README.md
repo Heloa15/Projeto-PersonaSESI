@@ -6,3 +6,11 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
  - > Atualizações no Documento de Requisitos,
  - > Novas instalações no Backend (Schema.prisma) e alterações no código,
  - > Alterações no Figma com o projeto Modelo de 2025.
+   
+## 18-03-2026
+- > Reunião do Grupo com o professor Robson
+- > Atualização no Git Hub (Foi adicionado no Git: Figma, Backend e o Frontend)
+- > Envio do que já foi realizado de nas aulas de PSOF 2
+
+
+  
