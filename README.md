@@ -9,6 +9,10 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
   - Kauã Lúcio
   - Vinicius Godoi
 
+### Link dos Protótipos
+- FIGMA: https://www.figma.com/design/Z0IGXkKRLshge3GvQzGSD6/Projeto-Persona-SESI?node-id=0-1&t=wKjsapzOFOGOufrF-1
+- LOVABLE: https://persona-sesi-organize.lovable.app/
+
 
  ## 11-03-2026
  - > Atualizações no Documento de Requisitos,
