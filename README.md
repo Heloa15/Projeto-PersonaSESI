@@ -6,7 +6,7 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
   - Lívia Mazzolini Guarizo
   - Monique Babler
   - Carlos H. Campos
-  - Kauã L. Silva
+  - Kauã Lúcio
   - Vinicius Godoi
 
 
