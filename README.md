@@ -2,12 +2,12 @@
 O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado ao apoio escolar para alunos com dificuldades de aprendizagem. A iniciativa oferece soluções educacionais personalizadas e adaptativas, usando tecnologias avançadas para criar um ambiente de aprendizado mais inclusivo, acessível e eficiente.
 
  ## Colaboradores:
-  - Heloá Vitória de Oliveira
-  - Lívia Mazzolini Guarizo
-  - Monique Babler
-  - Carlos H. Campos
-  - Kauã Lúcio
-  - Vinicius Godoi
+  - Heloá Vitória de Oliveira 
+  - Lívia Mazzolini Guarizo - https://github.com/Livia-singer08
+  - Monique Babler - https://github.com/MoniqueBabler
+  - Carlos H. Campos - https://github.com/CarlosHAlb
+  - Kauã Lúcio - https://github.com/kauaazxx
+  - Vinicius Godoi - https://github.com/ViniciusGodoi7
 
 ### Link dos Protótipos
 - FIGMA: https://www.figma.com/design/Z0IGXkKRLshge3GvQzGSD6/Projeto-Persona-SESI?node-id=0-1&t=wKjsapzOFOGOufrF-1
