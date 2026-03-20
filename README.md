@@ -32,6 +32,10 @@ npm init
 npm install i express cors mysql2 dotenv
 
 npm i nodemon
+
+npx prisma migrate dev
+
+npx prisma generate
 ```
 
 
