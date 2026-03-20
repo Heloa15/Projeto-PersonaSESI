@@ -28,8 +28,7 @@ persona-SESI/
 │
 ├── documentaçao/
 ├── backend/
-├── frontend/
-└── mobile/
+└── frontend/
 ```
   
 
