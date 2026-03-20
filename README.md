@@ -24,44 +24,54 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 
 
 ### Como Executar o Projeto
-📌 1. Clone o repositório
+```git hub
+ 1. Clone o repositório
 git clone https://github.com/Heloa15/Projeto-PersonaSESI.git
+```
 
-📌 2. Acesse a pasta do projeto
+```git hub
+ 2. Acesse a pasta do projeto
 cd Projeto-PersonaSESI
+```
 
-📌 3. Instale as dependências
+```git hub
+ 3. Instale as dependências
 npm install
+```
 
-📌 4. Configure o ambiente
-Crie um arquivo .env na raiz do projeto com suas variáveis de ambiente (ex: conexão com banco de dados).
+```git hub
+ 4. Configure o ambiente
+Crie um arquivo .env na raiz do projeto com suas variáveis de ambiente
+```
 
-📌 5. Configure o banco de dados (Prisma)
+```git hub
+ 5. Configure o banco de dados (Prisma)
 npx prisma migrate dev
 npx prisma generate
+```
 
-📌 6. Execute o projeto
+```git hub
+ 6. Execute o projeto
 npx nodemon
+```
 
 
 
+###  Histórico de Atualizações
 
-
-### 📅 Histórico de Atualizações
-
-🗓️ 11/03/2026
+## 11/03/2026
 - Atualizações no Documento de Requisitos
 - Alterações no backend (schema.prisma)
 - Ajustes no código
 - Atualizações no Figma com base no modelo de 2025
 
-### 🗓️ 18/03/2026
+## 18/03/2026
 - Reunião com o professor Robson
 - Atualização do GitHub (Frontend + Backend + Figma)
 - Envio das atividades de PSOF 2
 - Criação dos repositórios de Backend e Frontend
 - Implementação do README inicial
 
-### 📌 Objetivo do Projeto
+###  Objetivo do Projeto
 - > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.
   
