@@ -24,33 +24,33 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 
 
 ### Como Executar o Projeto
- - > 1. Clone o repositório
+1. Clone o repositório
 ```git hub
 git clone https://github.com/Heloa15/Projeto-PersonaSESI.git
 ```
 
-- > 2. Acesse a pasta do projeto
+2. Acesse a pasta do projeto
 ```git hub
 cd Projeto-PersonaSESI
 ```
 
-- >  3. Instale as dependências
+3. Instale as dependências
 ```git hub
 npm install
 ```
 
-- >  4. Configure o ambiente
+4. Configure o ambiente
 ```git hub
 Crie um arquivo .env na raiz do projeto com suas variáveis de ambiente
 ```
 
-- > 5. Configure o banco de dados (Prisma)
+5. Configure o banco de dados (Prisma)
 ```git hub
 npx prisma migrate dev
 npx prisma generate
 ```
 
-- > 6. Execute o projeto
+6. Execute o projeto
 ```git hub
 npx nodemon
 ```
