@@ -15,9 +15,26 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 
 
 ### Como executar o Projeto
+1. Clone o repositório do Persona SESI
 ```git hub
 git clone https://github.com/Heloa15/Projeto-PersonaSESI.git
 ```
+
+2. Acesse a pasta do projeto
+```git hub
+cd Projeto - Persona SESI
+```
+
+3. Instale as dependências
+``` git hub
+npm init
+
+npm install i express cors mysql2 dotenv
+
+npm i nodemon
+
+
+
 
 
 ### Programação HTML - index.html -
