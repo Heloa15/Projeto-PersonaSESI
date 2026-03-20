@@ -13,112 +13,55 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 - FIGMA: https://www.figma.com/design/Z0IGXkKRLshge3GvQzGSD6/Projeto-Persona-SESI?node-id=0-1&t=wKjsapzOFOGOufrF-1
 - LOVABLE: https://persona-sesi-organize.lovable.app/
 
+### Tecnologias Utilizadas 
+- Node.js
+- Express
+- MySQL
+- Prisma 
+- Dotenv
+- Cors
+- Nodemon
 
-### Como executar o Projeto
-1. Clone o repositório do Persona SESI
-```git hub
+
+### Como Executar o Projeto
+📌 1. Clone o repositório
 git clone https://github.com/Heloa15/Projeto-PersonaSESI.git
-```
 
-2. Acesse a pasta do projeto
-```git hub
-cd Projeto - Persona SESI
-```
+📌 2. Acesse a pasta do projeto
+cd Projeto-PersonaSESI
 
-3. Instale as dependências
-``` git hub
-npm init
+📌 3. Instale as dependências
+npm install
 
-npm install i express cors mysql2 dotenv
+📌 4. Configure o ambiente
+Crie um arquivo .env na raiz do projeto com suas variáveis de ambiente (ex: conexão com banco de dados).
 
-npm i nodemon
-
+📌 5. Configure o banco de dados (Prisma)
 npx prisma migrate dev
-
 npx prisma generate
-```
+
+📌 6. Execute o projeto
+npx nodemon
 
 
 
 
 
-### Programação HTML - index.html -
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PersonaSesi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="topo">
-        <div class="logo">
-            <h1>🎓 Pers💡naSesi</h1>
-        </div>
-        <nav>
-            <ul>
-                <li> <a href = "#inicio"> Início </a></li>
-                <li> <a href = "#sobre"> Sobre </a></li>
-                <li> <a href = "#contato"> Contato </a></li>
-            </ul>
-        </nav>
-    </header>
+### 📅 Histórico de Atualizações
 
-    <main>
-        <section class="frases">
-            <h2>Transformando a Educação com Tecnologia</h2>
-            <p>Uma plataforma integrada que conecta estudantes, professores, coordenadores e pais para uma experiência educacional mais eficiente e colaborativa.</p>
-        </section>
+🗓️ 11/03/2026
+- Atualizações no Documento de Requisitos
+- Alterações no backend (schema.prisma)
+- Ajustes no código
+- Atualizações no Figma com base no modelo de 2025
 
-        <section class="cards">
-            <div class="card">
-                <div class="emoji">🎓</div>
-                <h3>Área do Aluno</h3>
-                <p>Acesse suas notas, materiais de estudo e acompanhe seu progresso acadêmico com gráficos detalhados.</p>
-                <button> <a href = "Login.Aluno.html"> Fazer Login </a> </button>
-            </div>
+### 🗓️ 18/03/2026
+- Reunião com o professor Robson
+- Atualização do GitHub (Frontend + Backend + Figma)
+- Envio das atividades de PSOF 2
+- Criação dos repositórios de Backend e Frontend
+- Implementação do README inicial
 
-            <div class="card">
-                <div class="emoji">👩‍🏫</div>
-                <h3>Área do Professor</h3>
-                <p>Gerencie suas turmas, lance notas, crie tarefas e acompanhe o desempenho dos seus alunos.</p>
-                <button> <a href = "Login.Prof.html"> Fazer Login </a> </button>
-            </div>
-
-            <div class="card">
-                <div class="emoji">⚙️</div>
-                <h3>Área do Coordenador</h3>
-                <p>Gerencie a escola, acompanhe o desempenho geral e coordene atividades educacionais.</p>
-                <button> <a href = "Login.Cord.html"> Fazer Login </a> </button>
-            </div>
-
-            <div class="card">
-                <div class="emoji">❤️</div>
-                <h3>Área dos Pais</h3>
-                <p>Acompanhe o desenvolvimento dos seus filhos, notas, frequência e comunicação com a escola.</p>
-                <button> <a href = "Login.Pais.html"> Fazer Login </a> </button>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
-```
-
-
-
-
- ## 11-03-2026
- - > Atualizações no Documento de Requisitos,
- - > Novas instalações no Backend (Schema.prisma) e alterações no código,
- - > Alterações no Figma com o projeto Modelo de 2025.
-   
-## 18-03-2026
-- > Reunião do Grupo com o professor Robson
-- > Atualização no Git Hub (Foi adicionado no Git: Figma, Backend e o Frontend)
-- > Envio do que já foi realizado de nas aulas de PSOF 2
-- > Criação dos repositórios Backend e Frontend do Persona SESI ( emplementação do arquivo README nos repositórios) 
-
-
+### 📌 Objetivo do Projeto
+- > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.
   
