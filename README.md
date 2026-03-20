@@ -14,13 +14,13 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 - LOVABLE: https://persona-sesi-organize.lovable.app/
 
 ### Tecnologias Utilizadas 
-- Node.js
-- Express
+- Java Script
+- HTML
+- CSS
+- Bootstrap
 - MySQL
 - Prisma 
-- Dotenv
-- Cors
-- Nodemon
+  
 
 
 ### Como Executar o Projeto
