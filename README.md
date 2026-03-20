@@ -9,21 +9,31 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
   - Kauã Lúcio - https://github.com/kauaazxx
   - Vinicius Godoi - https://github.com/ViniciusGodoi7
 
-### Link dos Protótipos
+## Link dos Protótipos
 - FIGMA: https://www.figma.com/design/Z0IGXkKRLshge3GvQzGSD6/Projeto-Persona-SESI?node-id=0-1&t=wKjsapzOFOGOufrF-1
 - LOVABLE: https://persona-sesi-organize.lovable.app/
 
-### Tecnologias Utilizadas 
+## Tecnologias Utilizadas 
 - Java Script
 - HTML
 - CSS
 - Bootstrap
 - MySQL
-- Prisma 
+- Prisma
+
+
+## Estrutura do Projeto 
+```git hub
+persona-SESI/
+│
+├── documentaçao/
+├── backend/
+├── frontend/
+└── mobile/
+```
   
 
-
-### Como Executar o Projeto
+## Como Executar o Projeto
 1. Clone o repositório
 ```git hub
 git clone https://github.com/Heloa15/Projeto-PersonaSESI.git
