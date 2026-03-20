@@ -57,21 +57,21 @@ npx nodemon
 
 
 
-###  Histórico de Atualizações
+## Histórico de Atualizações
 
-## 11/03/2026
+### 11/03/2026
 - Atualizações no Documento de Requisitos
 - Alterações no backend (schema.prisma)
 - Ajustes no código
 - Atualizações no Figma com base no modelo de 2025
 
-## 18/03/2026
+### 18/03/2026
 - Reunião com o professor Robson
 - Atualização do GitHub (Frontend + Backend + Figma)
 - Envio das atividades de PSOF 2
 - Criação dos repositórios de Backend e Frontend
 - Implementação do README inicial
 
-###  Objetivo do Projeto
+##  Objetivo do Projeto
 - > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.
   
