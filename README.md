@@ -14,6 +14,12 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 - LOVABLE: https://persona-sesi-organize.lovable.app/
 
 
+### Como executar o Projeto
+```git hub
+git clone https://github.com/Heloa15/Projeto-PersonaSESI.git
+```
+
+
 ### Programação HTML - index.html -
 ```html
 <!DOCTYPE html>
