@@ -81,6 +81,7 @@ npx nodemon
 - Criação dos repositórios de Backend e Frontend
 - Implementação do README inicial
 
+
 ##  Objetivo do Projeto
 - > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.
   
