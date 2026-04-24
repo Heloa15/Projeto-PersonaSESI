@@ -28,7 +28,9 @@ persona-SESI/
 │
 ├── documentaçao/
 ├── backend/
+├── der/
 └── frontend/
+
 ```
   
 
@@ -87,6 +89,11 @@ npx nodemon
 - Realização do DER (Diagrama de Entidade e Relacionamento)
 - Inicialização da programação em Mobile
 - Organização do Git Hub (subpastas, atualização de tarefas da semana, mobile)
+
+### 24/04/2026
+- Backend foi remodelado com novas atualizações e instalações
+- DER (Diagrama de Entidade e Relacionamento) foi modificado
+- Organização do Git Hub (subpastas, atualização de tarefas da semana, mobile e backend)
 
 
 
