@@ -94,6 +94,7 @@ npx nodemon
 - Backend foi remodelado com novas atualizações e instalações
 - DER (Diagrama de Entidade e Relacionamento) foi modificado
 - Organização do Git Hub (subpastas, atualização de tarefas da semana, mobile e backend)
+- Finalização do FIGMA com base no protótipo de 2025
 
 
 
