@@ -13,9 +13,6 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
 - FIGMA: https://www.figma.com/proto/Z0IGXkKRLshge3GvQzGSD6/Projeto-Persona-SESI?node-id=4-184&p=f&t=TsLMo7DDvqu4hxf9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A13
 - LOVABLE: https://persona-sesi-organize.lovable.app/
 
- ## Apresentação Persona SESI - 08/05
- file:///C:/Users/Helo%C3%A1%20Vit%C3%B3ria/Downloads/Persona_SESI_Strategic_Blueprint.pdf
-
 ## Tecnologias Utilizadas 
 - Java Script
 - HTML
@@ -99,6 +96,11 @@ npx nodemon
 - Organização do Git Hub (atualização de tarefas da semana, mobile(FIGMA E FLUTTER) e backend)
 - Finalização do FIGMA com base no protótipo de 2025
 
+### 06/05/2026
+- Alinhamento do que ja foi realizado
+- Montagem da apresentação (08/05/2026)
+- Testes no backend
+- Separação e organização dos slides da apresentação
 
 
 ##  Objetivo do Projeto
