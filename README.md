@@ -102,6 +102,16 @@ npx nodemon
 - Testes no backend
 - Separação e organização dos slides da apresentação
 
+ ### 08/05 a 12/06
+ |- Continuação dos trabalhos dentro do *** backend, frontend, flutter, documentação e alinhamento com a equipe de colaboração ***
+
+### 12/06/2026
+- CRUD do backend funcionando.
+- Frontend 50% realizado
+- Flutter 50% realizado
+- Slides para apresentação de 17/06/2026
+- Documentação correta
+
 
 ##  Objetivo do Projeto
 - > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.
