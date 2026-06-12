@@ -103,7 +103,7 @@ npx nodemon
 - Separação e organização dos slides da apresentação
 
  ### 08/05 a 12/06
- |- Continuação dos trabalhos dentro do *** backend, frontend, flutter, documentação e alinhamento com a equipe de colaboração ***
+ - > Continuação dos trabalhos dentro do backend, frontend, flutter, documentação e alinhamento com a equipe de colaboração.
 
 ### 12/06/2026
 - CRUD do backend funcionando.
