@@ -1,0 +1,439 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-05-22T19:09:11.119Z",
+  "__export_source": "backend-aula",
+  "resources": [
+    {
+      "_id": "wrk_backend",
+      "_type": "workspace",
+      "name": "Backend Aula"
+    },
+    {
+      "_id": "fld_Persona Sesi - Back End",
+      "_type": "request_group",
+      "parentId": "wrk_backend",
+      "name": "Persona Sesi - Back End"
+    },
+    {
+      "_id": "fld_Alunos",
+      "_type": "request_group",
+      "parentId": "fld_Persona Sesi - Back End",
+      "name": "Alunos"
+    },
+    {
+      "_id": "req_Alunos_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Alunos",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/alunos/listar"
+    },
+    {
+      "_id": "req_Alunos_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Alunos",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/alunos/buscar/:id"
+    },
+    {
+      "_id": "req_Alunos_POST",
+      "_type": "request",
+      "parentId": "fld_Alunos",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/alunos/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"rm\": \"string\",\n  \"nome\": \"string\",\n  \"serie\": 0,\n  \"email\": \"string\",\n  \"cpf\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Alunos_PUT",
+      "_type": "request",
+      "parentId": "fld_Alunos",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/alunos/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"rm\": \"string\",\n  \"nome\": \"string\",\n  \"serie\": 0,\n  \"email\": \"string\",\n  \"cpf\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Alunos_DELETE",
+      "_type": "request",
+      "parentId": "fld_Alunos",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/alunos/excluir/:id"
+    },
+    {
+      "_id": "fld_Atividades",
+      "_type": "request_group",
+      "parentId": "fld_Persona Sesi - Back End",
+      "name": "Atividades"
+    },
+    {
+      "_id": "req_Atividades_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Atividades",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/atividades/listar"
+    },
+    {
+      "_id": "req_Atividades_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Atividades",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/atividades/buscar/:id"
+    },
+    {
+      "_id": "req_Atividades_POST",
+      "_type": "request",
+      "parentId": "fld_Atividades",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/atividades/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"materia\": \"string\",\n  \"media\": 0,\n  \"tarefas\": \"string\",\n  \"provas\": \"string\",\n  \"alunoId\": 0,\n  \"professorId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Atividades_PUT",
+      "_type": "request",
+      "parentId": "fld_Atividades",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/atividades/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"materia\": \"string\",\n  \"media\": 0,\n  \"tarefas\": \"string\",\n  \"provas\": \"string\",\n  \"alunoId\": 0,\n  \"professorId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Atividades_DELETE",
+      "_type": "request",
+      "parentId": "fld_Atividades",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/atividades/excluir/:id"
+    },
+    {
+      "_id": "fld_Coordenadores",
+      "_type": "request_group",
+      "parentId": "fld_Persona Sesi - Back End",
+      "name": "Coordenadores"
+    },
+    {
+      "_id": "req_Coordenadores_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Coordenadores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/coordenadores/listar"
+    },
+    {
+      "_id": "req_Coordenadores_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Coordenadores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/coordenadores/buscar/:id"
+    },
+    {
+      "_id": "req_Coordenadores_POST",
+      "_type": "request",
+      "parentId": "fld_Coordenadores",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/coordenadores/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"cpf\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Coordenadores_PUT",
+      "_type": "request",
+      "parentId": "fld_Coordenadores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/coordenadores/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"email\": \"string\",\n  \"cpf\": \"string\"\n}"
+      }
+    },
+    {
+      "_id": "req_Coordenadores_DELETE",
+      "_type": "request",
+      "parentId": "fld_Coordenadores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/coordenadores/excluir/:id"
+    },
+    {
+      "_id": "fld_Professores",
+      "_type": "request_group",
+      "parentId": "fld_Persona Sesi - Back End",
+      "name": "Professores"
+    },
+    {
+      "_id": "req_Professores_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Professores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/professores/listar"
+    },
+    {
+      "_id": "req_Professores_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Professores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/professores/buscar/:id"
+    },
+    {
+      "_id": "req_Professores_POST",
+      "_type": "request",
+      "parentId": "fld_Professores",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/professores/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"telefone\": \"string\",\n  \"disciplina\": \"string\",\n  \"email\": \"string\",\n  \"cpf\": \"string\",\n  \"coordenadorId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Professores_PUT",
+      "_type": "request",
+      "parentId": "fld_Professores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/professores/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"telefone\": \"string\",\n  \"disciplina\": \"string\",\n  \"email\": \"string\",\n  \"cpf\": \"string\",\n  \"coordenadorId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Professores_DELETE",
+      "_type": "request",
+      "parentId": "fld_Professores",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/professores/excluir/:id"
+    },
+    {
+      "_id": "fld_Responsaveis",
+      "_type": "request_group",
+      "parentId": "fld_Persona Sesi - Back End",
+      "name": "Responsaveis"
+    },
+    {
+      "_id": "req_Responsaveis_GET_ALL",
+      "_type": "request",
+      "parentId": "fld_Responsaveis",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Listar",
+      "method": "GET",
+      "url": "http://localhost:3000/responsaveis/listar"
+    },
+    {
+      "_id": "req_Responsaveis_GET_ID",
+      "_type": "request",
+      "parentId": "fld_Responsaveis",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Buscar",
+      "method": "GET",
+      "url": "http://localhost:3000/responsaveis/buscar/:id"
+    },
+    {
+      "_id": "req_Responsaveis_POST",
+      "_type": "request",
+      "parentId": "fld_Responsaveis",
+      "name": "Cadastrar",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "method": "POST",
+      "url": "http://localhost:3000/responsaveis/cadastrar",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"telefone\": \"string\",\n  \"email\": \"string\",\n  \"cpf\": \"string\",\n  \"alunoId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Responsaveis_PUT",
+      "_type": "request",
+      "parentId": "fld_Responsaveis",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Atualizar",
+      "method": "PUT",
+      "url": "http://localhost:3000/responsaveis/atualizar/:id",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"string\",\n  \"telefone\": \"string\",\n  \"email\": \"string\",\n  \"cpf\": \"string\",\n  \"alunoId\": 0\n}"
+      }
+    },
+    {
+      "_id": "req_Responsaveis_DELETE",
+      "_type": "request",
+      "parentId": "fld_Responsaveis",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "name": "Excluir",
+      "method": "DELETE",
+      "url": "http://localhost:3000/responsaveis/excluir/:id"
+    }
+  ]
+}

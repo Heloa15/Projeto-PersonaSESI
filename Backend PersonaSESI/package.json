@@ -1,0 +1,22 @@
+{
+  "name": "persona-sesi---back-end",
+  "version": "1.0.0",
+  "description": "projeto de back end do persona sesi",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "livia guarizo e kaua lucio",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/adapter-mariadb": "^7.8.0",
+    "@prisma/client": "^7.8.0",
+    "backend": "^0.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.2",
+    "prisma": "^7.8.0"
+  }
+}
