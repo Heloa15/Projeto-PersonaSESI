@@ -102,7 +102,7 @@ npx nodemon
 - Testes no backend
 - Separação e organização dos slides da apresentação
 
- ### 08/05 a 12/06
+ ### 08/05 a 10/06
  - > Continuação dos trabalhos dentro do backend, frontend, flutter, documentação e alinhamento com a equipe de colaboração.
 
 ### 12/06/2026
