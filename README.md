@@ -111,7 +111,7 @@ npx nodemon
 - Flutter 50% realizado
 - Slides para apresentação de 17/06/2026
 - Documentação correta
-
+  
 
 ##  Objetivo do Projeto
 - > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.
