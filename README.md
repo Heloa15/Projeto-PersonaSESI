@@ -111,6 +111,9 @@ npx nodemon
 - Flutter 50% realizado
 - Slides para apresentação de 17/06/2026
 - Documentação correta
+
+### 17/06/2026
+- Apresentação das atualizações do projeto (frontend, mobile e objetivos do projeto)
   
 
 ##  Objetivo do Projeto
