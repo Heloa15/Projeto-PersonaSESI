@@ -114,6 +114,11 @@ npx nodemon
 
 ### 17/06/2026
 - Apresentação das atualizações do projeto (frontend, mobile e objetivos do projeto)
+
+### 07/08/2026
+- Adicionou-se a Backend algumas regras de negócios e validação de Token 
+- Frontend foi feito a navegação dentro dos dashboards
+- Sprint com os professores
   
 
 ##  Objetivo do Projeto
