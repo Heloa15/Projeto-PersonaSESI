@@ -10,7 +10,7 @@ O PersonaSesi é um programa da BACKLINE em parceria com o Personaliza, voltado 
   - Vinicius Godoi - https://github.com/ViniciusGodoi7
 
 ## Link dos Protótipos
-- FIGMA: https://www.figma.com/proto/Z0IGXkKRLshge3GvQzGSD6/Projeto-Persona-SESI?node-id=4-184&p=f&t=TsLMo7DDvqu4hxf9-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A13
+- FIGMA: https://www.figma.com/proto/Z0IGXkKRLshge3GvQzGSD6/Projeto-Persona-SESI?node-id=4-13&t=0CRHJlDndh6494TE-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A13
 - LOVABLE: https://persona-sesi-organize.lovable.app/
 
 ## Tecnologias Utilizadas 
@@ -102,6 +102,24 @@ npx nodemon
 - Testes no backend
 - Separação e organização dos slides da apresentação
 
+ ### 08/05 a 10/06
+ - > Continuação dos trabalhos dentro do backend, frontend, flutter, documentação e alinhamento com a equipe de colaboração.
+
+### 12/06/2026
+- CRUD do backend funcionando.
+- Frontend 50% realizado
+- Flutter 50% realizado
+- Slides para apresentação de 17/06/2026
+- Documentação correta
+
+### 17/06/2026
+- Apresentação das atualizações do projeto (frontend, mobile e objetivos do projeto)
+
+### 07/08/2026
+- Adicionou-se a Backend algumas regras de negócios e validação de Token 
+- Frontend foi feito a navegação dentro dos dashboards
+- Sprint com os professores
+  
 
 ##  Objetivo do Projeto
 - > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.

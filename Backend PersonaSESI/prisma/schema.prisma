@@ -1,0 +1,72 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Alunos {
+  id            Int             @id @default(autoincrement())
+  rm            String          @unique
+  nome          String
+  serie         Int
+  email         String          @unique
+  cpf           String          @unique
+
+  atividades    Atividades[]
+  responsaveis  Responsaveis[]
+}
+
+model Atividades {
+  id            Int             @id @default(autoincrement())
+  materia       String
+  media         Float
+  tarefas       String
+
+  aluno         Alunos          @relation(fields: [alunoId], references: [id])
+  alunoId       Int
+
+  professor     Professores     @relation(fields: [professorId], references: [id])
+  professorId   Int
+}
+
+model Coordenadores {
+  id            Int             @id @default(autoincrement())
+  nome          String
+  email         String          @unique
+  cpf           String          @unique
+
+  professores   Professores[]
+}
+
+model Professores {
+  id              Int             @id @default(autoincrement())
+  nome            String
+  telefone        String
+  disciplina      String
+  email           String          @unique
+  cpf             String          @unique
+
+  atividades      Atividades[]
+
+  coordenador     Coordenadores   @relation(fields: [coordenadorId], references: [id])
+  coordenadorId   Int
+}
+
+model Responsaveis {
+  id            Int             @id @default(autoincrement())
+  nome          String
+  telefone      String
+  email         String          @unique
+  cpf           String          @unique
+
+  aluno         Alunos          @relation(fields: [alunoId], references: [id])
+  alunoId       Int
+}
