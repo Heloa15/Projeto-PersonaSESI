@@ -10,6 +10,8 @@ body {
   color: #111;
 }
 
+/* NAVBAR */
+
 .navbar {
   width: 100%;
   height: 70px;
@@ -46,11 +48,15 @@ nav a:hover {
   color: red;
 }
 
+/* CONTAINER */
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
+
+/* HERO */
 
 .hero {
   text-align: center;
@@ -71,11 +77,14 @@ nav a:hover {
   font-size: 18px;
 }
 
+/* CARDS */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   margin-bottom: 60px;
+  align-items: stretch;
 }
 
 .card {
@@ -85,7 +94,12 @@ nav a:hover {
   border: 1px solid #e2e2e2;
   text-align: center;
   transition: 0.3s;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 380px;
 }
 
 .card:hover {
@@ -99,37 +113,46 @@ nav a:hover {
   color: red;
   border-radius: 50%;
   margin: 0 auto 20px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 30px;
 }
 
 .card h2 {
   margin-bottom: 15px;
   font-size: 24px;
+  min-height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card p {
   color: #666;
   font-size: 14px;
   line-height: 1.7;
+  flex-grow: 1;
   margin-bottom: 25px;
 }
 
 .card a {
-  text-decoration: none;
+  width: 100%;
+  margin-top: auto;
 }
 
 .card button {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 6px;
-  background: red;
+  border-radius: 8px;
+  background: #ff0000;
   color: white;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -138,6 +161,8 @@ nav a:hover {
   background: #cc0000;
 }
 
+/* ESTATÍSTICAS */
+
 .stats {
   background: white;
   padding: 50px 30px;
@@ -145,7 +170,7 @@ nav a:hover {
   border: 1px solid #e2e2e2;
   text-align: center;
   margin-bottom: 60px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .stats h2 {
@@ -179,13 +204,20 @@ nav a:hover {
   font-size: 15px;
 }
 
-@media (max-width: 768px) {
+/* RESPONSIVO */
 
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     height: auto;
     padding: 20px;
     gap: 15px;
+  }
+
+  nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .hero h1 {
@@ -196,8 +228,11 @@ nav a:hover {
     font-size: 16px;
   }
 
-  nav {
-    gap: 20px;
+  .cards {
+    grid-template-columns: 1fr;
   }
 
+  .card {
+    min-height: auto;
+  }
 }
