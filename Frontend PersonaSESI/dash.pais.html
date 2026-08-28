@@ -1,184 +1,487 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Área dos Pais</title>
 
     <link rel="stylesheet" href="dash.pais.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 </head>
+
 <body>
 
+    <nav class="navbar">
 
-   <header class="navbar">
+        <a href="index.html" class="inicio">
+            🏠 Voltar ao Início
+        </a>
 
-  <div class="logo">
-    🎓 <span>Pers💡na SESI</span>
-  </div>
+        <div class="usuario">
 
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#areas">Áreas</a>
-    <a href="#estatisticas">Estatísticas</a>
-  </nav>
+            <span>
+                Responsável
+            </span>
 
-  <div class="nav-actions">
-    <a href="index.html" class="btn-nav">Voltar ao Início</a>
-    <a href="index.html" class="btn-nav btn-sair">Sair</a>
-  </div>
+            <button onclick="window.location.href='index.html'">
+                Sair
+            </button>
 
-</header>
+        </div>
 
+    </nav>
 
-    <div class="container">
+    <main class="container">
 
-        <!-- Cabeçalho -->
-        <section class="header">
-            <h1>Área dos Pais</h1>
-            <p>Acompanhe o desenvolvimento dos seus filhos</p>
+        <section class="welcome">
+
+            <h1>
+                Área dos Pais
+            </h1>
+
+            <p>
+                Acompanhe o desenvolvimento dos seus filhos
+            </p>
+
         </section>
 
-        <!-- Alunos -->
-        <div class="students">
-            <button class="student active">
+        <section class="students">
+
+            <button
+                type="button"
+                class="student active"
+            >
                 <i class="fa-regular fa-user"></i>
                 Ana Silva
             </button>
 
-            <button class="student">
+            <button
+                type="button"
+                class="student"
+            >
                 <i class="fa-regular fa-user"></i>
                 Pedro Silva
             </button>
+
+        </section>
+
+        <section class="stats-grid">
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>
+                        Média Geral
+                    </h3>
+
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                </div>
+
+                <h2 class="verde">
+                    8.8
+                </h2>
+
+                <span>
+                    Última atualização hoje
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>
+                        Frequência
+                    </h3>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                </div>
+
+                <h2>
+                    95%
+                </h2>
+
+                <span>
+                    Frequência escolar
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>
+                        Atividades
+                    </h3>
+
+                    <i class="fa-regular fa-bookmark"></i>
+
+                </div>
+
+                <h2>
+                    3
+                </h2>
+
+                <span>
+                    Este mês
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>
+                        Turma
+                    </h3>
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <h2>
+                    6º Ano A
+                </h2>
+
+                <span>
+                    Ana Silva
+                </span>
+
+            </div>
+
+        </section>
+
+        <div class="tabs">
+
+            <button
+                type="button"
+                class="tab active"
+                onclick="abrirAba('notas', this)"
+            >
+                Notas
+            </button>
+
+            <button
+                type="button"
+                class="tab"
+                onclick="abrirAba('progresso', this)"
+            >
+                Progresso
+            </button>
+
+            <button
+                type="button"
+                class="tab"
+                onclick="abrirAba('atividades', this)"
+            >
+                Atividades
+            </button>
+
         </div>
 
-        <!-- Cards -->
-        <section class="cards">
+        <section
+            id="notas"
+            class="conteudo active"
+        >
 
-            <div class="card">
-                <div class="card-top">
-                    <h3>Média Geral</h3>
-                    <i class="fa-solid fa-arrow-trend-up"></i>
+            <div class="painel">
+
+                <div class="box">
+
+                    <h2>
+                        Matemática
+                    </h2>
+
+                    <div class="item">
+
+                        <div>
+
+                            <h3>
+                                Média atual
+                            </h3>
+
+                            <p>
+                                Meta: 8.0
+                            </p>
+
+                        </div>
+
+                        <div class="nota">
+
+                            <h2>
+                                8.5
+                            </h2>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="value">8.8</div>
-                <span>Última atualização hoje</span>
-            </div>
+                <div class="box">
 
-            <div class="card">
-                <div class="card-top">
-                    <h3>Frequência</h3>
-                    <i class="fa-regular fa-calendar"></i>
+                    <h2>
+                        Português
+                    </h2>
+
+                    <div class="item">
+
+                        <div>
+
+                            <h3>
+                                Média atual
+                            </h3>
+
+                            <p>
+                                Meta: 8.5
+                            </p>
+
+                        </div>
+
+                        <div class="nota">
+
+                            <h2>
+                                9.2
+                            </h2>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="value">95%</div>
+                <div class="box">
 
-                <div class="progress">
-                    <div class="progress-fill" style="width:95%"></div>
+                    <h2>
+                        Ciências
+                    </h2>
+
+                    <div class="item">
+
+                        <div>
+
+                            <h3>
+                                Média atual
+                            </h3>
+
+                            <p>
+                                Meta: 8.0
+                            </p>
+
+                        </div>
+
+                        <div class="nota azul">
+
+                            <h2>
+                                8.7
+                            </h2>
+
+                        </div>
+
+                    </div>
+
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card-top">
-                    <h3>Atividades</h3>
-                    <i class="fa-regular fa-bookmark"></i>
-                </div>
-
-                <div class="value">3</div>
-                <span>Este mês</span>
-            </div>
-
-            <div class="card">
-                <div class="card-top">
-                    <h3>Turma</h3>
-                    <i class="fa-regular fa-award"></i>
-                </div>
-
-                <div class="value turma">6º Ano A</div>
-                <span>12 anos</span>
             </div>
 
         </section>
 
-        <!-- Tabs -->
-        <section class="tabs">
+        <section
+            id="progresso"
+            class="conteudo"
+        >
 
-            <button class="tab active">Notas</button>
-            <button class="tab">Progresso</button>
-            <button class="tab">Atividades</button>
-            <button class="tab">Comunicação</button>
+            <div class="box">
 
-        </section>
+                <h2>
+                    Progresso Escolar
+                </h2>
 
-        <!-- Matéria -->
-        <section class="subject-card">
+                <div class="item">
 
-            <div class="subject-header">
-                <h2>Matemática</h2>
+                    <div>
 
-                <div class="badge">
-                    8.5
+                        <h3>
+                            Média geral
+                        </h3>
+
+                        <p>
+                            Desempenho atual do aluno
+                        </p>
+
+                    </div>
+
+                    <div class="nota">
+
+                        <h2>
+                            8.8
+                        </h2>
+
+                    </div>
+
                 </div>
-            </div>
 
-            <div class="subject-info">
-                <span>Meta: 8</span>
-                <span>Atual: 8.5</span>
-            </div>
+                <div class="item">
 
-            <div class="big-progress">
-                <div class="big-progress-fill" style="width:85%"></div>
-            </div>
+                    <div>
 
-        </section>
+                        <h3>
+                            Frequência
+                        </h3>
 
-        <!-- Matéria -->
-        <section class="subject-card">
+                        <p>
+                            Presença nas aulas
+                        </p>
 
-            <div class="subject-header">
-                <h2>Português</h2>
+                    </div>
 
-                <div class="badge">
-                    9.2
+                    <div class="nota">
+
+                        <h2>
+                            95%
+                        </h2>
+
+                    </div>
+
                 </div>
-            </div>
 
-            <div class="subject-info">
-                <span>Meta: 8.5</span>
-                <span>Atual: 9.2</span>
-            </div>
-
-            <div class="big-progress">
-                <div class="big-progress-fill" style="width:92%"></div>
             </div>
 
         </section>
 
-        <!-- Matéria -->
-        <section class="subject-card">
+        <section
+            id="atividades"
+            class="conteudo"
+        >
 
-            <div class="subject-header">
-                <h2>Ciências</h2>
+            <div class="box">
 
-                <div class="badge">
-                    8.7
+                <h2>
+                    Atividades Recentes
+                </h2>
+
+                <div class="item">
+
+                    <div>
+
+                        <h3>
+                            Prova de Matemática
+                        </h3>
+
+                        <p>
+                            Atividade concluída
+                        </p>
+
+                    </div>
+
+                    <span class="status">
+                        Concluída
+                    </span>
+
                 </div>
-            </div>
 
-            <div class="subject-info">
-                <span>Meta: 8</span>
-                <span>Atual: 8.7</span>
-            </div>
+                <div class="item">
 
-            <div class="big-progress">
-                <div class="big-progress-fill" style="width:87%"></div>
+                    <div>
+
+                        <h3>
+                            Trabalho de Português
+                        </h3>
+
+                        <p>
+                            Entrega realizada
+                        </p>
+
+                    </div>
+
+                    <span class="status">
+                        Concluída
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    <div>
+
+                        <h3>
+                            Lista de Ciências
+                        </h3>
+
+                        <p>
+                            Atividade deste mês
+                        </p>
+
+                    </div>
+
+                    <span class="status">
+                        Pendente
+                    </span>
+
+                </div>
+
             </div>
 
         </section>
 
-    </div>
+    </main>
+
+    <script>
+
+        function abrirAba(id, botao) {
+
+            const conteudos =
+                document.querySelectorAll(".conteudo");
+
+            conteudos.forEach(function (conteudo) {
+                conteudo.classList.remove("active");
+            });
+
+            document
+                .getElementById(id)
+                .classList.add("active");
+
+            const tabs =
+                document.querySelectorAll(".tab");
+
+            tabs.forEach(function (tab) {
+                tab.classList.remove("active");
+            });
+
+            botao.classList.add("active");
+        }
+
+        const alunos =
+            document.querySelectorAll(".student");
+
+        alunos.forEach(function (aluno) {
+
+            aluno.addEventListener("click", function () {
+
+                alunos.forEach(function (item) {
+                    item.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+            });
+
+        });
+
+    </script>
 
 </body>
+
 </html>

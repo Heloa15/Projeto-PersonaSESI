@@ -6,232 +6,463 @@
 
 body {
     font-family: Inter, Arial, sans-serif;
-    background: #f8f9fa;
-    color: #111827;
+    background: #f5f6f8;
+    color: #0b1f3a;
 }
 
-/* Header */
-.header {
-    height: 70px;
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 68px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e5e9;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 30px;
+    padding: 0 36px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 600;
-    cursor: pointer;
+.inicio {
+    text-decoration: none;
+    color: #071d35;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-.user-area {
+.usuario {
     display: flex;
     align-items: center;
     gap: 20px;
-    color: #6b7280;
 }
 
-.logout-btn {
-    border: 1px solid #d1d5db;
-    background: white;
-    padding: 10px 18px;
+.usuario span {
+    color: #61748c;
+    font-size: 15px;
+}
+
+.usuario button {
+    border: 1px solid #d5dbe2;
+    background: #fff;
+    color: #172b43;
+
+    padding: 10px 17px;
     border-radius: 8px;
+
     cursor: pointer;
+    font-size: 14px;
     font-weight: 600;
+
+    transition: 0.2s;
 }
 
-.logout-btn:hover {
-    background: #f3f4f6;
+.usuario button:hover {
+    background: #f3f5f7;
 }
 
-/* Container */
+/* Esconde o segundo botão Sair */
+.logout-btn {
+    display: none;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
-    max-width: 1600px;
-    margin: 40px auto;
-    padding: 0 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 45px 0 70px;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.welcome {
+    margin-bottom: 40px;
 }
 
 .welcome h1 {
-    font-size: 52px;
+    font-size: 44px;
+    line-height: 1.1;
     font-weight: 800;
+    letter-spacing: -1px;
+    color: #091e38;
 }
 
 .welcome p {
-    color: #6b7280;
-    margin-top: 10px;
-    font-size: 22px;
+    margin-top: 22px;
+    color: #61748c;
+    font-size: 19px;
 }
 
-/* Cards */
+
+/* =========================
+   CARDS
+========================= */
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-    margin-top: 40px;
+    gap: 23px;
+    margin-top: 0;
 }
 
 .card {
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    padding: 28px;
+    min-height: 205px;
+
+    background: #ffffff;
+    border: 1px solid #dfe4e9;
+    border-radius: 14px;
+
+    padding: 30px 28px;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    align-items: center;
+
+    margin-bottom: 27px;
 }
 
 .card-header h3 {
-    font-size: 26px;
+    font-size: 19px;
+    font-weight: 750;
+    color: #101f33;
 }
 
 .card-header i {
-    color: #6b7280;
-    font-size: 22px;
+    font-size: 20px;
+    color: #65788e;
 }
 
-.card-value {
-    font-size: 50px;
-    font-weight: 700;
+.card h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #071d35;
 }
 
-.card-info {
-    margin-top: 8px;
-    color: #6b7280;
+.card span {
+    display: block;
+    margin-top: 17px;
+
+    color: #65778c;
+    font-size: 16px;
 }
 
-.success {
-    color: #16a34a;
+/* Média geral */
+.card:nth-child(4) h2,
+.verde {
+    color: #12b981;
 }
 
-/* Tabs */
+/* Tarefas */
+.card:nth-child(3) h2 {
+    color: #f07819;
+}
+
+
+/* =========================
+   ABAS
+========================= */
+
 .tabs {
-    margin-top: 35px;
-    display: inline-flex;
-    background: #f1f5f9;
-    padding: 4px;
-    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    margin-top: 42px;
+    margin-bottom: 43px;
 }
 
 .tab {
     border: none;
     background: transparent;
-    padding: 12px 22px;
-    cursor: pointer;
+
+    padding: 14px 22px;
+    border-radius: 9px;
+
+    color: #111d2e;
     font-size: 16px;
-    border-radius: 8px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    background: #ffffff;
 }
 
 .tab.active {
-    background: white;
-    font-weight: 600;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    background: #ffffff;
+    font-weight: 700;
+
+    box-shadow: 0 4px 12px rgba(20, 40, 60, 0.08);
 }
 
-/* Conteúdo */
-.content-grid {
+
+/* =========================
+   CONTEÚDO DAS ABAS
+========================= */
+
+.conteudo {
+    display: none;
+    margin-top: 0;
+}
+
+.conteudo.active {
+    display: block;
+}
+
+
+/* =========================
+   PAINÉIS
+========================= */
+
+.painel {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-top: 35px;
+    gap: 28px;
 }
 
-.panel {
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    padding: 28px;
-}
-
-.panel h2 {
-    font-size: 38px;
-    margin-bottom: 25px;
-}
-
-.item-card {
-    border: 1px solid #e5e7eb;
+.box {
+    background: #ffffff;
+    border: 1px solid #dfe4e9;
     border-radius: 14px;
-    padding: 20px;
 
+    padding: 30px 28px;
+}
+
+.box > h2 {
+    font-size: 29px;
+    font-weight: 800;
+    color: #091e38;
+
+    margin-bottom: 26px;
+}
+
+
+/* =========================
+   ITENS
+========================= */
+
+.item {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 16px;
+    min-height: 100px;
+
+    border: 1px solid #e1e5e9;
+    border-radius: 12px;
+
+    padding: 20px;
+    margin-bottom: 14px;
+
+    background: #ffffff;
 }
 
-.item-card h3 {
-    font-size: 22px;
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.item h3 {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #0b1e36;
+
     margin-bottom: 8px;
 }
 
-.item-card p {
-    color: #6b7280;
+.item p {
+    color: #687a90;
+    font-size: 15px;
 }
 
-.score {
+
+/* =========================
+   NOTAS
+========================= */
+
+.nota {
     text-align: right;
 }
 
-.score strong {
-    display: block;
-    font-size: 34px;
+.nota h2 {
+    font-size: 31px;
+    font-weight: 800;
+
+    color: #12b981;
+
+    margin-bottom: 4px;
 }
 
-.score span {
-    color: #6b7280;
+.nota span {
+    color: #718196;
+    font-size: 14px;
 }
 
-.green strong {
-    color: #16a34a;
+.nota.azul h2 {
+    color: #4383e5;
 }
 
-.blue strong {
-    color: #2563eb;
-}
+
+/* =========================
+   STATUS
+========================= */
 
 .status {
-    color: #f97316;
-    font-weight: 500;
+    background: #fff0df;
+    color: #e87515;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 700;
 }
 
-/* Responsivo */
-@media (max-width: 1200px) {
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid #d9dfe5;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #24364d;
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1e73d8;
+    box-shadow: 0 0 0 3px rgba(30, 115, 216, 0.08);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btnSalvar {
+    border: none;
+
+    background: #0c2745;
+    color: #ffffff;
+
+    padding: 15px 22px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btnSalvar:hover {
+    background: #12395f;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1100px) {
+
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .content-grid {
+    .painel {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 18px;
+    }
+
+    .usuario span {
+        display: none;
+    }
+
+    .container {
+        padding: 30px 18px 50px;
+    }
+
+    .welcome h1 {
+        font-size: 34px;
+    }
+
+    .welcome p {
+        font-size: 17px;
+    }
+
     .stats-grid {
         grid-template-columns: 1fr;
     }
 
-    .header {
-        flex-direction: column;
-        gap: 10px;
-        height: auto;
-        padding: 15px;
+    .tabs {
+        overflow-x: auto;
     }
 
-    .welcome h1 {
-        font-size: 36px;
+    .tab {
+        white-space: nowrap;
     }
 
-    .panel h2 {
-        font-size: 28px;
+    .box {
+        padding: 22px;
+    }
+
+    .box > h2 {
+        font-size: 25px;
+    }
+
+    .item {
+        align-items: flex-start;
+        gap: 15px;
     }
 }

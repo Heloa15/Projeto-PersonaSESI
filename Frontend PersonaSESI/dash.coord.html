@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Coordenador</title>
+
+    <link rel="stylesheet" href="dash.coord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo" onclick="window.location.href='index.html'">
+            <i class="fa-solid fa-house"></i>
+            <span>Voltar ao Início</span>
+        </div>
+
+        <div class="user-area">
+
+            <span>godoyheloa9@gmail.com (Coordenador)</span>
+
+            <button class="logout-btn" onclick="window.location.href='index.html'">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Sair
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+
+        <section class="welcome">
+
+            <h1>Dashboard do Coordenador</h1>
+
+            <p>Gestão Escolar - Ensino Fundamental II</p>
+
+        </section>
+
+
+        <section class="stats-grid">
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>Total de Alunos</h3>
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <div class="card-value">216</div>
+
+                <div class="card-info">
+                    6º ao 9º ano
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>Média Geral</h3>
+
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                </div>
+
+                <div class="card-value success">
+                    8.1
+                </div>
+
+                <div class="card-info">
+                    +0.2 este ano
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>Frequência</h3>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                </div>
+
+                <div class="card-value azul">
+                    92.5%
+                </div>
+
+                <div class="progress">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <h3>Taxa de Aprovação</h3>
+
+                    <i class="fa-regular fa-circle-check"></i>
+
+                </div>
+
+                <div class="card-value success">
+                    98.5%
+                </div>
+
+                <div class="card-info">
+                    Acima da meta (95%)
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="tabs">
+
+            <button class="tab active" onclick="abrirAba('geral',this)">
+                Visão Geral
+            </button>
+
+            <button class="tab" onclick="abrirAba('relatorios',this)">
+                Relatórios
+            </button>
+
+            <button class="tab" onclick="abrirAba('desempenho',this)">
+                Desempenho
+            </button>
+
+        </div>
+
+
+        <section id="geral" class="conteudo active">
+
+            <div class="content-grid">
+
+                <div class="panel">
+
+                    <h2>Desempenho por Matéria</h2>
+
+                    <div class="chart-container">
+                        <canvas id="chartDesempenho"></canvas>
+                    </div>
+
+                </div>
+
+                <div class="panel">
+
+                    <h2>Frequência Escolar</h2>
+
+                    <div class="chart-container">
+                        <canvas id="chartFrequencia"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="relatorios" class="conteudo">
+
+            <div class="panel">
+
+                <h2>Relatórios Gerais</h2>
+
+                <div class="item-card">
+
+                    <div>
+
+                        <h3>Relatório de Notas</h3>
+
+                        <p>Última atualização hoje.</p>
+
+                    </div>
+
+                    <button class="btn">
+                        Baixar
+                    </button>
+
+                </div>
+
+                <div class="item-card">
+
+                    <div>
+
+                        <h3>Relatório de Frequência</h3>
+
+                        <p>Atualizado automaticamente.</p>
+
+                    </div>
+
+                    <button class="btn">
+                        Baixar
+                    </button>
+
+                </div>
+
+                <div class="item-card">
+
+                    <div>
+
+                        <h3>Relatório de Aprovação</h3>
+
+                        <p>Todos os anos.</p>
+
+                    </div>
+
+                    <button class="btn">
+                        Baixar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="desempenho" class="conteudo">
+
+            <div class="panel">
+
+                <h2>Desempenho Geral da Escola</h2>
+
+                <div class="item-card">
+
+                    <div>
+
+                        <h3>Português</h3>
+
+                        <p>Média Geral</p>
+
+                    </div>
+
+                    <div class="score green">
+
+                        <strong>8.6</strong>
+
+                        <span>Média</span>
+
+                    </div>
+
+                </div>
+
+                <div class="item-card">
+
+                    <div>
+
+                        <h3>Matemática</h3>
+
+                        <p>Média Geral</p>
+
+                    </div>
+
+                    <div class="score blue">
+
+                        <strong>7.9</strong>
+
+                        <span>Média</span>
+
+                    </div>
+
+                </div>
+
+
+        </section>
+
+    </main>
+
+    <script>
+        function abrirAba(id, botao) {
+            document.querySelectorAll(".conteudo").forEach(sec => {
+                sec.classList.remove("active");
+            });
+
+            document.getElementById(id).classList.add("active");
+
+            document.querySelectorAll(".tab").forEach(tab => {
+                tab.classList.remove("active");
+            });
+
+            botao.classList.add("active");
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctxDesempenho = document.getElementById('chartDesempenho').getContext('2d');
+            new Chart(ctxDesempenho, {
+                type: 'bar',
+                data: {
+                    labels: ['Português', 'Matemática', 'Ciências', 'História', 'Geografia'],
+                    datasets: [
+                        {
+                            label: 'Média Atual',
+                            data: [8.6, 7.9, 8.3, 8.1, 8.5],
+                            backgroundColor: '#dc2626',
+                            borderRadius: 6
+                        },
+                        {
+                            label: 'Média Anterior',
+                            data: [8.2, 7.5, 8.0, 7.9, 8.3],
+                            backgroundColor: '#94a3b8',
+                            borderRadius: 6
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top' }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 10
+                        }
+                    }
+                }
+            });
+
+            const ctxFrequencia = document.getElementById('chartFrequencia').getContext('2d');
+            new Chart(ctxFrequencia, {
+                type: 'line',
+                data: {
+                    labels: ['1º Bim', '2º Bim', '3º Bim', '4º Bim'],
+                    datasets: [{
+                        label: 'Frequência (%)',
+                        data: [91.5, 93.0, 92.5, 94.2],
+                        borderColor: '#dc2626',
+                        backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                        fill: true,
+                        tension: 0.3,
+                        pointBackgroundColor: '#dc2626',
+                        pointRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top' }
+                    },
+                    scales: {
+                        y: {
+                            min: 80,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) { return value + '%'; }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

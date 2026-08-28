@@ -1,157 +1,335 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Aluno</title>
 
-  <title>Dashboard do Aluno</title>
+    <link rel="stylesheet" href="dashboard.css">
 
-  <link rel="stylesheet" href="dashboard.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <header class="navbar">
+<nav class="navbar">
 
     <a href="../index.html" class="inicio">
-      🏠 Voltar ao Início
+        🏠 Voltar ao Início
     </a>
 
     <div class="usuario">
+        <span>godoyheloa9@gmail.com (Aluno)</span>
 
-      <span>godoyheloa9@gmail.com (Aluno)</span>
-
-      <button>Sair</button>
-
+        <button onclick="window.location.href='../index.html'">
+            Sair
+        </button>
     </div>
 
-  </header>
+</nav>
 
-  <main class="container">
+<div class="container">
 
     <section class="topo">
-
-      <h1>Dashboard do Aluno</h1>
-
-      <p>Bem-vindo, João Silva!</p>
-
+        <h1>Dashboard do Aluno</h1>
+        <p>Bem-vindo, João Silva!</p>
     </section>
 
     <section class="cards">
 
-      <div class="card">
-        <h3>Média Geral</h3>
+        <div class="card">
+            <h3>Média Geral</h3>
+            <div class="numero verde">8.7</div>
+            <span>+0.5 este mês</span>
+        </div>
 
-        <div class="numero verde">8.7</div>
+        <div class="card">
+            <h3>Matérias</h3>
+            <div class="numero">2</div>
+            <span>Principais</span>
+        </div>
 
-        <span>+0.5 este mês</span>
-      </div>
+        <div class="card">
+            <h3>Tarefas Pendentes</h3>
+            <div class="numero laranja">2</div>
+            <span>Para entregar</span>
+        </div>
 
-      <div class="card">
-        <h3>Matérias</h3>
-
-        <div class="numero">2</div>
-
-        <span>Principais</span>
-      </div>
-
-      <div class="card">
-        <h3>Tarefas Pendentes</h3>
-
-        <div class="numero laranja">2</div>
-
-        <span>Para entregar</span>
-      </div>
-
-      <div class="card">
-        <h3>Pontuação</h3>
-
-        <div class="numero amarelo">1.247</div>
-
-        <span>Pontos totais</span>
-      </div>
+        <div class="card">
+            <h3>Pontuação</h3>
+            <div class="numero amarelo">1.247</div>
+            <span>Pontos totais</span>
+        </div>
 
     </section>
+
+    <!-- MENU -->
 
     <section class="menu">
 
-      <button class="ativo">Visão Geral</button>
-      <button>Tarefas</button>
-      <button>Português</button>
-      <button>Matemática</button>
+        <button class="tab ativo" data-tab="visao">
+            Visão Geral
+        </button>
+
+        <button class="tab" data-tab="tarefas">
+            Tarefas
+        </button>
+
+        <button class="tab" data-tab="portugues">
+            Português
+        </button>
+
+        <button class="tab" data-tab="matematica">
+            Matemática
+        </button>
 
     </section>
 
-    <section class="conteudo">
+    <!-- VISÃO GERAL -->
 
-      <div class="grafico">
+    <section class="conteudo tab-content" id="visao">
 
-        <h2>Desempenho por Matéria</h2>
+        <div class="grafico">
 
-        <h3>Notas vs Média da Turma</h3>
+            <h2>Desempenho por Matéria</h2>
 
-        <div class="grafico-box">
+            <h3>Notas vs Média da Turma</h3>
 
-          <div class="barra vermelha" style="height: 220px;"></div>
+            <div class="grafico-box">
 
-          <div class="barra cinza" style="height: 190px;"></div>
+                <div class="barra vermelha" style="height:220px;"></div>
 
-          <div class="barra vermelha" style="height: 210px;"></div>
+                <div class="barra cinza" style="height:190px;"></div>
 
-          <div class="barra cinza" style="height: 180px;"></div>
+                <div class="barra vermelha" style="height:210px;"></div>
 
-        </div>
+                <div class="barra cinza" style="height:180px;"></div>
 
-      </div>
-
-      <div class="atividades">
-
-        <h2>Atividades Recentes</h2>
-
-        <div class="atividade">
-
-          <div>
-            <span class="tag verde">Matemática</span>
-
-            <h3>Prova de Álgebra</h3>
-
-            <p>Entregue em 28/05</p>
-          </div>
-
-          <div class="nota verde">
-            9.2
-            <span>Nota</span>
-          </div>
+            </div>
 
         </div>
 
-        <div class="atividade">
+        <div class="atividades">
 
-          <div>
-            <span class="tag azul">Português</span>
+            <h2>Atividades Recentes</h2>
 
-            <h3>Redação</h3>
+            <div class="atividade">
 
-            <p>Entregue em 25/05</p>
-          </div>
+                <div>
 
-          <div class="nota azul">
-            8.5
-            <span>Nota</span>
-          </div>
+                    <span class="tag verde">Matemática</span>
+
+                    <h3>Prova de Álgebra</h3>
+
+                    <p>Entregue em 28/05</p>
+
+                </div>
+
+                <div class="nota verde">
+
+                    9.2
+
+                    <span>Nota</span>
+
+                </div>
+
+            </div>
+
+            <div class="atividade">
+
+                <div>
+
+                    <span class="tag azul">Português</span>
+
+                    <h3>Redação</h3>
+
+                    <p>Entregue em 25/05</p>
+
+                </div>
+
+                <div class="nota azul">
+
+                    8.5
+
+                    <span>Nota</span>
+
+                </div>
+
+            </div>
 
         </div>
-
-      </div>
 
     </section>
 
-  </main>
+    <!-- TAREFAS -->
+
+    <section class="tab-content" id="tarefas" style="display:none;">
+
+        <div class="atividades">
+
+            <h2>Tarefas Pendentes</h2>
+
+            <div class="atividade">
+
+                <div>
+
+                    <span class="tag verde">Matemática</span>
+
+                    <h3>Lista de Exercícios</h3>
+
+                    <p>Entrega: 14/06</p>
+
+                </div>
+
+            </div>
+
+            <div class="atividade">
+
+                <div>
+
+                    <span class="tag azul">Português</span>
+
+                    <h3>Redação</h3>
+
+                    <p>Entrega: 20/06</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PORTUGUÊS -->
+
+    <section class="tab-content" id="portugues" style="display:none;">
+
+        <div class="atividades">
+
+            <h2>Português</h2>
+
+            <div class="atividade">
+
+                <div>
+
+                    <h3>Redação</h3>
+
+                    <p>Nota: 8.5</p>
+
+                </div>
+
+                <div class="nota azul">
+
+                    8.5
+
+                    <span>Nota</span>
+
+                </div>
+
+            </div>
+
+            <div class="atividade">
+
+                <div>
+
+                    <h3>Interpretação de Texto</h3>
+
+                    <p>Média: 9.0</p>
+
+                </div>
+
+                <div class="nota azul">
+
+                    9.0
+
+                    <span>Nota</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MATEMÁTICA -->
+
+    <section class="tab-content" id="matematica" style="display:none;">
+
+        <div class="atividades">
+
+            <h2>Matemática</h2>
+
+            <div class="atividade">
+
+                <div>
+
+                    <h3>Álgebra</h3>
+
+                    <p>Nota: 9.2</p>
+
+                </div>
+
+                <div class="nota verde">
+
+                    9.2
+
+                    <span>Nota</span>
+
+                </div>
+
+            </div>
+
+            <div class="atividade">
+
+                <div>
+
+                    <h3>Geometria</h3>
+
+                    <p>Nota: 8.9</p>
+
+                </div>
+
+                <div class="nota verde">
+
+                    8.9
+
+                    <span>Nota</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script>
+
+const tabs = document.querySelectorAll(".tab");
+const conteudos = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        tabs.forEach(btn => btn.classList.remove("ativo"));
+
+        tab.classList.add("ativo");
+
+        conteudos.forEach(sec => {
+            sec.style.display = "none";
+        });
+
+        document.getElementById(tab.dataset.tab).style.display = "grid";
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>
