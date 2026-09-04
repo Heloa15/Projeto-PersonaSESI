@@ -123,4 +123,7 @@ npx nodemon
 
 ##  Objetivo do Projeto
 - > O Persona SESI busca reduzir dificuldades de aprendizagem por meio de tecnologia, oferecendo uma experiência personalizada para cada aluno, respeitando seu ritmo e suas necessidades.
+
+## Produção
+- > Produzido e documentado pelo **Projeto Persona Sesi**
   
