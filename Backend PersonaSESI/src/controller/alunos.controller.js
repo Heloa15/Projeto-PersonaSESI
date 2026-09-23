@@ -80,6 +80,8 @@ const excluir = async (req, res) => {
     }
 };
 
+
+
 module.exports = {
     cadastrar,
     listar,

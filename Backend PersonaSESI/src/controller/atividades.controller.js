@@ -3,8 +3,10 @@ const prisma = require("../data/prisma");
 const cadastrar = async (req, res) => {
     try {
         const item = await prisma.atividades.create({
-            data: req.body
-        });
+            data: {
+                ...req.body,
+                status: "Pendente"}
+});
         res.status(201).json(item);
     } catch (error) {
         res.status(500).json({ msg: "Erro ao cadastrar atividade" });
@@ -12,11 +14,31 @@ const cadastrar = async (req, res) => {
 };
 
 const listar = async (req, res) => {
+
     try {
-        const lista = await prisma.atividades.findMany();
+
+        const { status, materia } = req.query;
+        const lista = await prisma.atividades.findMany({
+
+            where: {
+                ...(status && {
+                    status: status
+                }),
+
+                ...(materia && {
+                    materia: materia
+                })
+            }
+
+        });
+
         res.status(200).json(lista);
+
     } catch (error) {
-        res.status(500).json({ msg: "Erro ao listar atividades" });
+
+        res.status(500).json({
+            msg: "Erro ao listar atividades"
+        });
     }
 };
 

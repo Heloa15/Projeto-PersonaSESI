@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+const validaLogin = require("../middleware/validaLogin");
+
 const {
     cadastrar,
     listar,
@@ -10,9 +12,9 @@ const {
 } = require("../controller/coordenadores.controller");
 
 router.post("/cadastrar", cadastrar);
-router.get("/listar", listar);
-router.get("/buscar/:email", buscar);
-router.put("/atualizar/:email", atualizar);
-router.delete("/excluir/:email", excluir);
+router.get("/listar", validaLogin("COORDENADOR"), listar);
+router.get("/buscar/:email", validaLogin("COORDENADOR"), buscar);
+router.put("/atualizar/:email", validaLogin("COORDENADOR"), atualizar);
+router.delete("/excluir/:email", validaLogin("COORDENADOR"), excluir);
 
 module.exports = router;
