@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 
 const login = async (req, res) => {
     try {
+        console.log(req.body);
         const { email, senha } = req.body;
 
         if (!email || !senha) {
@@ -57,6 +58,11 @@ const login = async (req, res) => {
         if (!usuario || usuario.senha !== senha) {
             return res.status(401).send("E-mail ou senha incorretos");
         }
+        console.log({
+                id: usuario.id,
+                email: usuario.email,
+                perfil: perfil
+            })
 
         const token = jwt.sign(
             {

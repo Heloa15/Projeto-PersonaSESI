@@ -7,7 +7,6 @@ const cadastrar = async (req, res) => {
         });
 
         res.status(201).json(item);
-
     } catch (error) {
         res.status(500).json({ msg: "Erro ao cadastrar aluno" });
     }
@@ -15,11 +14,9 @@ const cadastrar = async (req, res) => {
 
 const listar = async (req, res) => {
     try {
-
         const lista = await prisma.alunos.findMany();
 
         res.status(200).json(lista);
-
     } catch (error) {
         res.status(500).json({ msg: "Erro ao listar alunos" });
     }

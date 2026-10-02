@@ -17,22 +17,17 @@
         🏠 Voltar ao Início
     </a>
 
-    <div class="usuario">
-        <span>godoyheloa9@gmail.com (Aluno)</span>
-
-        <button onclick="window.location.href='../index.html'">
-            Sair
-        </button>
-    </div>
+    <button id="btnSair">
+    Sair
+</button>
 
 </nav>
 
-<div class="container">
-
-    <section class="topo">
-        <h1>Dashboard do Aluno</h1>
-        <p>Bem-vindo, João Silva!</p>
-    </section>
+<section class="topo">
+    <h1>Dashboard do Aluno</h1>
+    <p id="usuario"></p>
+    <p id="boasVindas">Bem-vindo!</p>
+</section>
 
     <section class="cards">
 
@@ -150,78 +145,7 @@
 
     </section>
 
-    <!-- PORTUGUÊS -->
-
-    <section class="tab-content" id="portugues" style="display:none;">
-
-        <div class="atividades">
-
-            <h2>Português</h2>
-
-            <div class="atividade">
-
-                <div>
-
-                    <h3>Redação</h3>
-
     
-
-                </div>
-
-                </div>
-
-            </div>
-
-            <div class="atividade">
-
-                <div>
-
-                    <h3>Interpretação de Texto</h3>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- MATEMÁTICA -->
-
-    <section class="tab-content" id="matematica" style="display:none;">
-
-        <div class="atividades">
-
-            <h2>Matemática</h2>
-
-            <div class="atividade">
-
-                <div>
-
-                    <h3>Álgebra</h3>
-
-                </div>
-
-
-            </div>
-
-            <div class="atividade">
-
-                <div>
-
-                    <h3>Geometria</h3>
-
-
-                </div>
-
-               
-
-            </div>
-
-        </div>
-
-    </section>
-
-</div>
 
 <script>
 
@@ -249,4 +173,5 @@ tabs.forEach(tab => {
 </script>
 
 </body>
+<script src="dash.aluno.js"></script>
 </html>

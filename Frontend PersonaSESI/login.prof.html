@@ -25,19 +25,11 @@
                     <input type="password" id="senha" placeholder="Sua senha" required>
                 </div>
 
-                <button type="submit" class="btn-primary">Entrar</button>
+                <button type="submit" class="btn-primary" onclick="login()">Entrar</button>
                 <a href="index.html" class="btn-secondary">Voltar</a>
             </form>
         </div>
     </main>
-
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // impede o recarregamento da página
-
-            // Aqui você pode validar login depois
-            window.location.href = 'dash.prof.html';
-        });
-    </script>
 </body>
+<script src="login.js"></script>
 </html>
