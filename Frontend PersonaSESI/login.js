@@ -5,8 +5,8 @@ function login() {
     fetch("http://localhost:3000/auth/login", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json", // Tell server we're sending JSON
-            "Accept": "application/json"        // Expect JSON in response
+            "Content-Type": "application/json", 
+            "Accept": "application/json"        
         },
         body: JSON.stringify({ email: email, senha: senha })
     })
@@ -16,7 +16,7 @@ function login() {
         })
 } 
 
-//PROFESSOR
+
 function loginProfessor() {
 const email = document.querySelector("#email").value;
 const senha = document.querySelector("#senha").value;
@@ -51,7 +51,7 @@ fetch("http://localhost:3000/auth/login", {
         localStorage.setItem("token", data.token);
         localStorage.setItem("usuario", JSON.stringify(data.usuario));
 
-        window.location.href = "professor.html";
+        window.location.href = "dash.prof.html";
     })
     .catch(error => {
         console.error(error);
@@ -96,7 +96,7 @@ fetch("http://localhost:3000/auth/login", {
         localStorage.setItem("token", data.token);
         localStorage.setItem("usuario", JSON.stringify(data.usuario));
 
-        window.location.href = "coordenador.html";
+        window.location.href = "dash.coord.html";
     })
     .catch(error => {
         console.error(error);
